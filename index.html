@@ -9,18 +9,22 @@
     <title>Home</title>
 </head>
 <body>
-
-    <section class="home-nav-and-hero"> <!--Hero background goes at this layer-->
-        <section class="home-nav">
-            <p>address line</p>
-            <hr>
-            <div class="home-nav-links">
-                <div>
-                    <a href="index.html">Home</a>
+    <!------------------------------------------------------>
+    <!-- NAVBAR + HERO SECTION + ABOUT SECTION WAVE BORDER-->
+    <!------------------------------------------------------>
+    <section class="home-nav-and-hero d-flex flex-column justify-content-between align-items-center"> <!--Hero background goes at this layer-->
+        
+        <!--NAVBAR-->
+        <section class="home-nav d-flex flex-column align-items-center justify-content-center">
+            <p class="m-0">4358 michigan st, new york city, ny, 48927</p>
+            <hr class="m-1">
+            <div class="home-nav-links d-flex flex-row justify-content-between w-100">
+                <div class="d-flex flex-column gap-1">
+                    <a href="index.html" class="text-decoration-underline link-offset-3">Home</a>
                     <a href="about.html">About</a>
                     <a href="menu.html">menu</a>
                 </div>
-                <div>
+                <div class="d-flex flex-column text-end gap-1">
                     <a href="affogato.html">affogato</a>
                     <a href="gallery.html">Gallery</a>
                     <a href="contact.html">contact</a>
@@ -28,31 +32,42 @@
             </div>
         </section>
 
-        <section class="home-hero">
-            <div>
-                <img>
+        <!--HERO-->
+        <section class="home-hero d-grid justify-content-center align-items-center">
+            <div class="row">
+               <img class="img-fluid col-12 pb-5" src="./images/index-hero-logo.png" alt="Main Logo">
             </div>
         </section>
 
-        <section class="home-wavy-edge">
-            <img>
-        </section>
+        <!--WAVY EDGE-->
+        <section class="home-wavy-edge align-self-bottom"></section>
+    </section>
 
+    <!------------------------------------------------------>
+    <!-- ABOUT SECTION -->
+    <!------------------------------------------------------>
+    <section class="home-about d-flex gap-3 align-items-center px-4">
+        
+        <!--IMAGE-->
+        <div class="w-50">
+            <img class="img-fluid border border-2" src="./images/index-about.jpeg" alt="Iced Coffee">
+        </div>
+
+        <!--TEXT-->
+        <div class="w-50">
+            <h2>coffee with <em>class</em></h2>
+            <p class="m-0 lh-1">We&apos;re your next go-to coffee shop right in the heart of NYC. Inspired by Italian beverages and pastries, combined with our cozy atmosphere, we&apos;d love to be your workspace for the day, or your coffee with a friend.</p>
+        </div>
     </section>
 
 
-    <section class="home-about">
-        <div>
-            <img>
-        </div>
-        <div>
-            <h2>Header</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-    </section>
-
-    <section class="home-reviews-and-footer">
-        <section class="home-reviews">
+    <!------------------------------------------------------>
+    <!-- REVIEW SECTION + FOOTER -->
+    <!------------------------------------------------------>
+    <section class="home-reviews-and-footer m-0 p-0">
+        
+        <!--REVIEWS-->
+        <section class="home-reviews p-5">
             <h2>reviews</h2>
             <hr>
             <div class="home-review-cards">
@@ -61,9 +76,9 @@
                         <img> <!--star image-->
                     </div>
                     <div>
-                        <h2>Header</h2>
-                        <h3>author</h3>
-                        <p>full review</p>
+                        <h2>"tastefully retro"</h2>
+                        <h3>nyt restaurant review</h3>
+                        <p>Delicious coffee and desserts, beautiful location and interior, and bright warm atmosphere. Easy five stars.</p>
                     </div>
                 </div>
                 <div class="home-review-card">
@@ -71,9 +86,9 @@
                         <img> <!--star image-->
                     </div>
                     <div>
-                        <h2>Header</h2>
-                        <h3>author</h3>
-                        <p>full review</p>
+                        <h2>"The Perfect Afternoon"</h2>
+                        <h3>the infatuation</h3>
+                        <p>For the coziest rainy day, curl up at Affogato Coffee Club with a book and a hot chai.</p>
                     </div>
                 </div>
                 <div class="home-review-card">
@@ -81,40 +96,41 @@
                         <img> <!--star image-->
                     </div>
                     <div>
-                        <h2>Header</h2>
-                        <h3>author</h3>
-                        <p>full review</p>
+                        <h2>"Rich and flavorful"</h2>
+                        <h3>ny coffee magazine</h3>
+                        <p>Smooth, crema-topped espresso. Cool and light vanilla ice cream. This is the best affogato in the city.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="footer">
-            <div>
-                <div>
-                    <h2>header/label</h2>
-                    <p>address</p>
+        <!--FOOTER-->
+        <section class="footer d-flex flex-column justify-content-center align-items-center p-5 rounded-top-5 text-uppercase">
+            <div class="d-flex justify-content-center align-items-center gap-3">
+                <div class="w-50 text-end">
+                    <h2>location &amp; hours</h2>
+                    <p><nobr>4358 michigan st,</nobr> <nobr>new york city, ny,</nobr> 48927</p>
                 </div>
-                <div>
+                <div class="footer-hours w-50">
                     <hr>
-                    <div>
-                        <p>days</p>
-                        <p>hours</p>
+                    <div class="d-flex justify-content-between align-items-center no-wrap">
+                        <p class="m-0">mon - fri</p>
+                        <p class="m-0 text-end">6am - 8pm</p>
                     </div>
                     <hr>
                     <div>
-                        <p>days</p>
-                        <p>hours</p>
+                        <p>sat</p>
+                        <p>7am - 10pm</p>
                     </div>
                     <hr>
                     <div>
-                        <p>days</p>
-                        <p>hours</p>
+                        <p>sun</p>
+                        <p>7am - 3pm</p>
                     </div>
                     <hr>
                 </div>
             </div>
-            <p>© 2024 Company Name</p>
+            <p>© affogato coffee club 2025</p>
         </section>
     </section>
     
