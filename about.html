@@ -11,16 +11,16 @@
 <body>
 
     <section class="about-nav-and-hero"> <!--Hero background goes at this layer-->
-        <section class="nav">
-            <hr>
-            <div class="nav-links">
-                <div>
+        <section class="nav d-flex flex-column align-items-center justify-content-center p-4 rounded-bottom-5">
+            <hr class="w-100 border border-2 opacity-100">
+            <div class="nav-links d-flex flex-row justify-content-between w-100">
+                <div class="d-flex flex-column gap-1">
                     <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
+                    <a class="text-decoration-underline link-offset-2" href="about.html">About</a>
                     <a href="menu.html">menu</a>
                 </div>
-                <img> <!--Logo Image-->
-                <div>
+                <img src="./images/logo-4.svg" alt="Logo" class="ms-3">
+                <div class="d-flex flex-column text-end gap-1">
                     <a href="affogato.html">affogato</a>
                     <a href="gallery.html">Gallery</a>
                     <a href="contact.html">contact</a>
@@ -29,29 +29,60 @@
         </section>
     </section>
 
-    <section class="about-cta d-flex justify-content-center align-items-center gap-3 p-4"> 
-        <div class="vertical-bar"></div>
+    <section class="about-cta d-flex justify-content-center align-items-center gap-4 p-5"> 
+        <div class="vertical-bar ms-3"></div>
         <div>
-            <h2>your new favorite coffee spot</h2>
-            <p>Classic New York restaurant culture meets authentic Italian coffee here at Affogato Coffee Club.</p>
-            <button class="p-2 rounded-pill border border-2 text-uppercase">view menu</button>
+            <h2 class="lh-1">your new favorite coffee spot</h2>
+            <p class="lh-sm">Classic New York restaurant culture meets authentic Italian coffee here at Affogato Coffee Club.</p>
+            <button class="py-2 px-4 rounded-pill text-uppercase">view menu</button>
         </div>
     </section>
 
-    <section class="about-content">
-        <div>
-            <h2></h2>
-            <hr>
-            <p></p>
+
+    <section class="about-content-and-footer d-flex flex-column justify-content-between align-items-center">
+    <section class="about-content p-5 d-flex flex-column gap-5">
+        <div class="d-flex flex-column rounded-top-5">
+            <h2 class="m-0 p-3">our history</h2>
+            <hr class="m-0">
+            <p class="m-0 p-3 lh-sm">Named for our signature Italian dessert, Affogato Coffee Club was born out of the love of NYC restaurant culture, and a desire to bring authentic Italian coffee and pastries to the forefront of our city&apos;s coffee scene. Though we just opened this year, we&apos;re excited to become part of NYC&apos;s vibrant community of small businesses. </p>
         </div>
-        <div>
-            <h2></h2>
-            <hr>
-            <p></p>
+        <div class="d-flex flex-column rounded-top-5">
+            <h2 class="m-0 p-3">our philosophy</h2>
+            <hr class="m-0">
+            <p class="m-0 p-3 lh-sm">Our goal is to create a welcoming, warm, accepting space for everyone to experience a cozy and safe environment with a hot cup of coffee. Through our partnerships with local non-profits, we believe in loving our community first, and that our goal will always be, first and foremost, to care for each other.</p>
         </div>
     </section>
 
-    <footer></footer>
+    <!--FOOTER-->
+    <section class="footer d-flex flex-column justify-content-center align-items-center px-5 py-4 gap-3 rounded-top-5 text-uppercase">
+                <div class="d-flex justify-content-center align-items-center gap-3">
+                    <div class="footer-header text-end align-items-center">
+                        <h2 class="lh-1">location &amp; hours</h2>
+                        <p class="m-0 lh-sm"><nobr>4358 michigan st,</nobr> <nobr>new york city, ny,</nobr> 48927</p>
+                    </div>
+                    <div class="footer-hours">
+                        <hr class="my-2">
+                        <div class="d-flex justify-content-between align-items-center no-wrap">
+                            <p class="m-0">mon - fri</p>
+                            <p class="m-0 text-end">6am - 8pm</p>
+                        </div>
+                        <hr class="my-2">
+                        <div class="d-flex justify-content-between align-items-center no-wrap">
+                            <p class="m-0">sat</p>
+                            <p class="m-0 text-end">7am - 10pm</p>
+                        </div>
+                        <hr class="my-2">
+                        <div class="d-flex justify-content-between align-items-center no-wrap">
+                            <p class="m-0">sun</p>
+                            <p class="m-0 text-end">7am - 3pm</p>
+                        </div>
+                        <hr class="my-2">
+                    </div>
+                </div>
+                <p class="m-0 align-self-center">© affogato coffee club 2025</p>
+        </section>
+        </section>
+ 
     
 </body>
 </html>

@@ -56,22 +56,41 @@
 }
 
 /* WAVY EDGE SECTION */
-.home-wavy-edge {
+.wavy-edge {
     height: 10vh;
     width: 100vw;
   --mask:
-    radial-gradient(25px at 50% 35px,#000 99%,#0000 101%) calc(50% - 40px) 0/80px 100%,
-    radial-gradient(25px at 50% -15px,#0000 99%,#000 101%) 50% 20px/80px 100% repeat-x;
+    radial-gradient(30.34px at 50% 42.9px,#000 99%,#0000 101%) calc(50% - 44px) 0/88px 100%,
+    radial-gradient(30.34px at 50% -20.9px,#0000 99%,#000 101%) 50% 22px/88px 100% repeat-x;
   -webkit-mask: var(--mask);
           mask: var(--mask);
     background-color: #5C1116;
+}
+
+.wavy-edge-2 {
+    height: 10vh;
+    width: 100vw;
+  --mask:
+    radial-gradient(31.84px at 50% calc(100% + 20.9px),#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) calc(50% - 44px) calc(50% - 12.5px + .5px)/88px 25px repeat-x,
+    radial-gradient(31.84px at 50% -20.9px,#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) 50% calc(50% + 12.5px)/88px 25px repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+    background-color: var(--yellow);
 }
 
 /* ABOUT SECTION */
 .home-about {
     background-color: var(--red);
     color: var(--yellow);
-    padding-bottom: 75px;
+    padding-bottom: 60px;
+}
+
+.home-about div:first-child {
+    width: 45%;
+}
+
+.home-about div:last-child {
+    width: 55%;
 }
 
 .home-about img {
@@ -80,20 +99,32 @@
 }
 
 .home-about h2 {
-    font: var(--header-text);
+    font-family: carbona-variable, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.1rem;
     text-transform: uppercase;
-    font-size: 3.5vw;
+    font-size: 1.8rem;
 }
 
 .home-about p {
-    font: var(--basic-text);
-    font-size: max(1rem, 3.5vw);
+    font-family: carbona-variable, sans-serif;
+    /* font-size: max(1rem, 3.5vw); */
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: -0.05rem;
 }
 
 /* REVIEWS */
 .home-reviews-and-footer {
     background-color: var(--yellow);
     color: var(--red);
+}
+
+.home-reviews > h2 {
+    font-family: carbona-variable, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
 }
 
 .home-reviews-and-footer hr {
@@ -103,14 +134,36 @@
 }
 
 .home-review-card h2 {
-    font: var(--basic-text);
-    font-size: max(1rem, 3.5vw);
+    font-family: carbona-variable, sans-serif;
+    font-weight: 350;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: -0.07rem;
+    /* font-size: max(1rem, 3.5vw); */
 }
 
 .home-review-card h3 {
-    font: var(--header-text);
-    font-size: 2.5vw;
+    font-family: carbona-variable, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1rem;
     text-transform: uppercase;
+    letter-spacing: -0.05rem;
+}
+
+.home-review-card p {
+    font-family: carbona-variable, sans-serif;
+    font-weight: 350;
+    font-size: 1rem;
+}
+
+.home-review-card img {
+    width: 20px;
+    height: 20px;
+}
+
+.home-review-card div:first-child {
+    border-color: var(--red) !important;
 }
 
 
@@ -124,7 +177,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 70vh;
 }
 
 /* CTA */
@@ -140,12 +193,150 @@
 }
 
 .about-cta h2 {
-    font: var(--header-text);
-    font-size: 3.5vw;
+    font-family: carbona-variable, sans-serif;
+    font-weight: 600;
+    font-size: 2.1rem;
     text-transform: uppercase;
+    letter-spacing: -0.1rem;
+}
+
+.about-cta p {
+    font-family: carbona-variable, sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    letter-spacing: -0.05rem;
+}
+
+.about-cta button {
+    background-color: var(--red);
+    color: var(--yellow);
+    font-family: carbona-variable, sans-serif;
+    font-weight: 450;
+    font-size: 1.2rem;
+    letter-spacing: -0.05rem;
+    cursor: pointer;
+    border: solid 3px var(--yellow);
+    box-shadow: 0 4px 0 0 var(--yellow);
 }
 
 /* TEXT CONTENT */
+.about-content-and-footer {
+    background-color: var(--yellow);
+}
+
+.about-content {
+    color: var(--red);
+}
+
+.about-content div {
+    border: solid 3px var(--red);
+    box-shadow: -10px 10px 0 0 var(--red);
+}
+
+.about-content hr {
+    border: solid 1.5px var(--red);
+    opacity: 1;
+}
+
+.about-content h2 {
+    font-family: carbona-variable, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: -0.1rem;
+}
+
+.about-content p {
+    font-family: carbona-variable, sans-serif;
+    font-weight: 350;
+    font-size: 1rem;
+    letter-spacing: -0.05rem;
+}
+
+/* ---------------------------------------------------- */
+/* AFFOGATO PAGE */
+/* ---------------------------------------------------- */
+
+.affogato-content-and-footer {
+    background-color: var(--red);
+}
+
+.affogato-content {
+    color: var(--yellow);
+}
+
+.affogato-content div:first-child {
+    width: 30%;
+    border: solid 3px var(--yellow);
+    border-left: none;
+    background-image: url(../images/affogato-img2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    border-radius: 0 3rem 3rem 0;
+}
+
+.affogato-content div:last-child {
+    width: 70%;
+}
+
+.affogato-content h2 {
+    font-family: carbona-variable, sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: -0.1rem;
+}
+
+.affogato-content h3 {
+    font-family: carbona-variable, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: -0.05rem;
+    text-transform: uppercase;
+}
+
+.affogato-content p {
+    font-family: carbona-variable, sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: -0.05rem;
+}
+
+.affogato-content h4 {
+    font-family: carbona-variable, sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: -0.07rem;
+}
+
+
+/* ---------------------------------------------------- */
+/* HEADER | ALL PAGES (EXCEPT INDEX) */
+/* ---------------------------------------------------- */
+
+.nav {
+    background-color: var(--green);
+}
+
+.nav a {
+    color: var(--yellow);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav hr {
+    border-color: var(--yellow) !important;
+}
+
+.nav-links img {
+    fill: var(--yellow);
+    width: 25vw;
+    height: auto;
+}
+
 
 
 /* ---------------------------------------------------- */
@@ -158,11 +349,22 @@
 }
 
 .footer h2 {
-    font: var(--header-text);
     font-size: 1.3rem;
 }
 
 .footer p {
-    font: var(--basic-text);
     font-size: 0.75rem;
+}
+
+.footer-header {
+    width: 40%;
+}
+
+.footer-hours {
+    width: 60%;
+}
+
+.footer p, .footer h2 {
+    font-family: carbona-variable, sans-serif;
+    font-weight: 400;
 }
