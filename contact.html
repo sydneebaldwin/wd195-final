@@ -9,29 +9,91 @@
     <title>Contact</title>
 </head>
 <body>
-    <section> <!--Background image goes at this layer-->
+    <section class="contact-page d-flex flex-column justify-content-between" style="min-height: 100vh;"> <!--Background image goes at this layer-->
 
-        <header></header>
-
-        <section class="contact">
-            <div>
-                <img> <!--wavy border-->
-            </div>
-            <div class="contact-content">
-                <div class="contact-header">
-                    <h2></h2>
-                    <h3></h3>
+    <div class="nav d-flex flex-row justify-content-center rounded-bottom-5 px-5 py-4 gap-4 px-lg-3">
+        <section class="d-flex flex-column align-items-center justify-content-center">
+            <p class="d-none d-md-block align-self-start m-0 text-uppercase">4358 michigan st, new york city, NY, 48927</p>
+            
+            <hr class="w-100 border border-2 opacity-100 container-md-flex mt-md-2">
+            
+            <div class="w-100 nav-links d-flex flex-row justify-content-between align-items-center gap-3 justify-content-md-center">
+                
+                <div class="d-flex flex-column gap-1 flex-md-row gap-md-3">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="menu.html">menu</a>
                 </div>
-                <form>
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
+                
+                <div class="header-mobile-img ms-3 d-md-none align-self-stretch w-100">
+                    <!-- <img src="./images/logo-4.svg" alt="Logo" class="align-self-center"> -->
+                </div>
+
+                <div class="d-flex flex-column text-end gap-1 flex-md-row gap-md-3">
+                    <a href="affogato.html">affogato</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a class="text-decoration-underline link-offset-2" href="contact.html">contact</a>
+                </div>
+            </div>
+        </section>
+        <div class="header-desktop-img d-none d-md-block align-self-stretch"></div>
+        </div>
+
+        <section class="contact container-sm px-4 py-5">
+            <section class="menu-wavy-edge align-self-bottom w-100">
+                <div class="menu-wavy-edge-2 w-100"></div>
+            </section>
+            <div class="contact-content d-flex flex-column justify-content-center align-items-center px-3 pb-5 gap-4 rounded-bottom-5 flex-lg-row">
+                <div class="contact-header d-lg-none">
+                    <h2 class="text-center m-0">contact us</h2>
+                    <h3 class="text-center m-0 lh-1">we'd love to <br>hear from you</h3>
+                </div>
+                <form class="d-flex flex-column gap-3 px-4 col-lg-6 px-lg-0">
+                    <input class="rounded-pill px-3 py-2" type="text" placeholder="Name" required>
+                    <input class="rounded-pill px-3 py-2" type="email" placeholder="Email" required>
+                    <textarea class="rounded-4 px-3 py-2" placeholder="Your Message" required></textarea>
                 </form>
-                <button type="submit"></button>
+                <div class="vertical-bar d-none d-lg-block align-self-stretch"></div>
+                <div class="contact-button d-flex flex-column justify-content-center">
+                    <h2 class="d-none m-0 d-lg-block">contact us</h2>
+                    <h3 class="d-none m-0 lh-1 d-lg-block">we'd love to <br>hear from you</h3>
+                    <button class="rounded-pill px-3 py-1 mt-lg-3" type="submit">send message</button>
+                </div>
             </div>
         </section>
 
-        <footer></footer>
+        <footer class="d-flex flex-row justify-content-center justify-content-md-between align-items-center rounded-top-5 px-5 py-4 w-100">
+            <section class="footer-logo d-none d-md-flex align-self-stretch ms-lg-3">
+                <img class="w-100 align-self-center" src="./images/footer-logo.png" alt="Footer Logo">
+            </section>
+            <section class="footer-main d-flex flex-column justify-content-center align-items-center gap-3 text-uppercase gap-md-1 me-lg-3">
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <div class="footer-header d-flex flex-column text-end align-items-end justify-content-center">
+                            <h2 class="lh-1">location <br>&amp; hours</h2>
+                            <p class="m-0 lh-sm"><nobr>4358 michigan st,</nobr> <nobr>new york city, ny,</nobr><br> 48927</p>
+                        </div>
+                        <div class="footer-hours">
+                            <hr class="my-2">
+                            <div class="d-flex justify-content-between align-items-center no-wrap">
+                                <p class="m-0">mon - fri</p>
+                                <p class="m-0 text-end">6am - 8pm</p>
+                            </div>
+                            <hr class="my-2">
+                            <div class="d-flex justify-content-between align-items-center no-wrap">
+                                <p class="m-0">sat</p>
+                                <p class="m-0 text-end">7am - 10pm</p>
+                            </div>
+                            <hr class="my-2">
+                            <div class="d-flex justify-content-between align-items-center no-wrap">
+                                <p class="m-0">sun</p>
+                                <p class="m-0 text-end">7am - 3pm</p>
+                            </div>
+                            <hr class="my-2">
+                        </div>
+                    </div>
+                    <p class="m-0 align-self-center align-self-md-end">© affogato coffee club 2025</p>
+            </section>
+        </footer>
 
     </section>
 </body>

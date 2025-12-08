@@ -9,31 +9,100 @@
     <title>Gallery</title>
 </head>
 <body>
-    <header>
+    <div class="gallery-page">
+    <div class="nav d-flex flex-row justify-content-center rounded-bottom-5 px-5 py-4 gap-4 px-lg-3">
+        <section class="d-flex flex-column align-items-center justify-content-center">
+            <p class="d-none d-md-block align-self-start m-0 text-uppercase">4358 michigan st, new york city, NY, 48927</p>
+            
+            <hr class="w-100 border border-2 opacity-100 container-md-flex mt-md-2">
+            
+            <div class="w-100 nav-links d-flex flex-row justify-content-between align-items-center gap-3 justify-content-md-center">
+                
+                <div class="d-flex flex-column gap-1 flex-md-row gap-md-3">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="menu.html">menu</a>
+                </div>
+                
+                <div class="header-mobile-img ms-3 d-md-none align-self-stretch w-100">
+                    <!-- <img src="./images/logo-4.svg" alt="Logo" class="align-self-center"> -->
+                </div>
 
-    </header>
+                <div class="d-flex flex-column text-end gap-1 flex-md-row gap-md-3">
+                    <a href="affogato.html">affogato</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a class="text-decoration-underline link-offset-2" href="contact.html">contact</a>
+                </div>
+            </div>
+        </section>
+        <div class="header-desktop-img d-none d-md-block align-self-stretch"></div>
+        </div>
 
-    <section class="gallery">
-        <div>
-            <img> <!--Gallery Image--></img>
-        </div>
-        <div>
-            <img> <!--Gallery Image--></img>
-        </div>
-        <div>
-            <img> <!--Gallery Image--></img>
-        </div>
-        <div>
-            <img> <!--Gallery Image--></img>
-        </div>
-        <div>
-            <img> <!--Gallery Image--></img>
-        </div>
+    <section class="gallery justify-content-center py-5">
+            
+            <div class="overflow-hidden d-flex align-items-center" style="grid-area: box-1;">
+                <img class="w-100" src="./images/gallery-1.jpeg">
+            </div>
+
+            <div class="overflow-hidden d-flex align-items-center" style="grid-area: box-2;">
+                <img class=" w-100" src="./images/affogato-hero.jpeg">
+            </div>
+
+            <div class="overflow-hidden d-flex align-items-center" style="grid-area: box-3;">
+                <img class="w-100" src="./images/gallery-3.jpeg">
+            </div>
+
+            <div class="overflow-hidden d-flex align-items-center" style="grid-area: box-4;">
+                <img class=" w-100" src="./images/gallery-4.jpeg">
+            </div>
+
+            <div class="overflow-hidden d-flex align-items-center" style="grid-area: box-5;">
+                <img class="w-100" src="./images/gallery-5.jpeg">
+            </div>
+
+            <div class="d-none overflow-hidden d-md-flex justify-content-center align-items-center rounded-pill" style="grid-area: box-6;">
+                <img class="w-50" src="./images/header-logo-desktop.png">
+            </div>
+            
+            <!-- <img class="img-fluid" style="grid-area: box-3; background-color: yellow;" src="./images/gallery-3.jpeg"> 
+            <img class="img-fluid" style="grid-area: box-4; background-color: green;" src="./images/gallery-4.jpeg"> 
+            <img class="img-fluid" style="grid-area: box-5; background-color: blue;" src="./images/gallery-5.jpeg">
+            <img class="d-none d-md-block" style="grid-area: box-6; background-color: purple;" src=""> -->
     </section>
 
-    <footer>
-        
-    </footer>
+        <footer class="d-flex flex-row justify-content-center justify-content-md-between align-items-center rounded-top-5 px-5 py-4 w-100">
+            <section class="footer-logo d-none d-md-flex align-self-stretch ms-lg-3">
+                <img class="w-100 align-self-center" src="./images/footer-logo.png" alt="Footer Logo">
+            </section>
+            <section class="footer-main d-flex flex-column justify-content-center align-items-center gap-3 text-uppercase gap-md-1 me-lg-3">
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <div class="footer-header d-flex flex-column text-end align-items-end justify-content-center">
+                            <h2 class="lh-1">location <br>&amp; hours</h2>
+                            <p class="m-0 lh-sm"><nobr>4358 michigan st,</nobr> <nobr>new york city, ny,</nobr><br> 48927</p>
+                        </div>
+                        <div class="footer-hours">
+                            <hr class="my-2">
+                            <div class="d-flex justify-content-between align-items-center no-wrap">
+                                <p class="m-0">mon - fri</p>
+                                <p class="m-0 text-end">6am - 8pm</p>
+                            </div>
+                            <hr class="my-2">
+                            <div class="d-flex justify-content-between align-items-center no-wrap">
+                                <p class="m-0">sat</p>
+                                <p class="m-0 text-end">7am - 10pm</p>
+                            </div>
+                            <hr class="my-2">
+                            <div class="d-flex justify-content-between align-items-center no-wrap">
+                                <p class="m-0">sun</p>
+                                <p class="m-0 text-end">7am - 3pm</p>
+                            </div>
+                            <hr class="my-2">
+                        </div>
+                    </div>
+                    <p class="m-0 align-self-center align-self-md-end">© affogato coffee club 2025</p>
+            </section>
+        </footer>
+        </div>
     
 </body>
 </html>

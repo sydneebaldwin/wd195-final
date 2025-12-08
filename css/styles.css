@@ -177,18 +177,23 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 100vh;
+}
+
+.corner-fix {
+    background-color: var(--red);
+    height: 50vh;
 }
 
 /* CTA */
 .about-cta {
     background-color: var(--red);
     color: var(--yellow);
+    width: 100%;
 }
 
 .about-cta .vertical-bar {
     width: 0.5rem;
-    height: 300px;
     background-color: var(--yellow);
 }
 
@@ -253,9 +258,77 @@
     letter-spacing: -0.05rem;
 }
 
+.about-main-cta {
+    width: 100vw;
+}
+
+.wavy-edge-vertical {
+    width: 10vw;
+  --mask:
+    radial-gradient(26.25px at 37px 50%,#000 99%,#0000 101%) 0 calc(50% - 40px)/100% 80px,
+    radial-gradient(26.25px at -17px 50%,#0000 99%,#000 101%) 20px 50%/100% 80px repeat-y;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+    background-color: var(--red);
+}
+
+.wavy-edge-2-vertical {
+    width: 10vw;
+    height: 100%;
+  --mask:
+    radial-gradient(28.25px at calc(100% + 17px) 50%,#0000 calc(99% - 4px),#000 calc(101% - 4px) 99%,#0000 101%) calc(50% - 12px + .5px) calc(50% - 40px)/ 24px 80px  repeat-y,
+    radial-gradient(28.25px at -17px 50%,#0000 calc(99% - 4px),#000 calc(101% - 4px) 99%,#0000 101%) calc(50% + 12px) 50%/24px 80px  repeat-y;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+    background-color: var(--yellow);
+}
+
+
 /* ---------------------------------------------------- */
 /* AFFOGATO PAGE */
 /* ---------------------------------------------------- */
+
+.affogato-nav-and-hero {
+    background-image: url(../images/affogato-hero.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.affogato-review {
+    background-color: var(--red);
+    color: var(--yellow);
+    border: solid 3px var(--yellow);
+}
+
+.affogato-review h2 {
+    font-family: carbona-variable, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: -0.07rem;
+}
+
+.affogato-review p {
+    font-family: carbona-variable, sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    letter-spacing: -0.05rem;
+    text-transform: uppercase;
+}
+
+.affogato-hero button {
+    background-color: var(--red);
+    color: var(--yellow);
+    font-family: carbona-variable, sans-serif;
+    font-weight: 450;
+    font-size: 1.2rem;
+    letter-spacing: -0.05rem;
+    cursor: pointer;
+    border: solid 3px var(--yellow);
+    box-shadow: 0 8px 0 0 var(--yellow);
+}
 
 .affogato-content-and-footer {
     background-color: var(--red);
@@ -314,11 +387,200 @@
 
 
 /* ---------------------------------------------------- */
+/* MENU PAGE */
+/* ---------------------------------------------------- */
+
+.menu-page {
+    background-image: url(../images/menu-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    /* filter: brightness(0.9) hue-rotate(10deg) blur(2px); */
+    font-family: carbona-variable, sans-serif;
+    color: var(--red);
+    text-transform: uppercase;
+}
+
+.menu-wavy-edge {
+    height: 10vh;
+    width: 100vw;
+  --mask:
+    radial-gradient(26.25px at 50% 37px,#000 99%,#0000 101%) calc(50% - 40px) 0/80px 100%,
+    radial-gradient(26.25px at 50% -17px,#0000 99%,#000 101%) 50% 20px/80px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+    background-color: var(--yellow);
+}
+
+.menu-wavy-edge-2 {
+    height: 10vh;
+    width: 100vw;
+  --mask:
+    radial-gradient(28.25px at 50% calc(100% + 17px),#0000 calc(99% - 4px),#000 calc(101% - 4px) 99%,#0000 101%) calc(50% - 40px) calc(50% - 12px + .5px)/80px 24px repeat-x,
+    radial-gradient(28.25px at 50% -17px,#0000 calc(99% - 4px),#000 calc(101% - 4px) 99%,#0000 101%) 50% calc(50% + 12px)/80px 24px repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+    background-color: var(--red);
+}
+
+.menu-section-2 {
+      -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+.menu-section-content > div, .menu-section-details {
+    background-color: var(--yellow);
+}
+
+.menu-section-content h2 {
+    font-weight: 400;
+    font-size: clamp(2.2rem, 9.4vw, 2.4rem);
+    letter-spacing: -0.15rem;
+}
+
+.menu-section-content p {
+    font-weight: 300;
+    font-size: clamp(1rem, 4.3vw, 1.2rem);
+    letter-spacing: -0.05rem;
+}
+
+.menu-section-details h2 {
+    font-weight: 400;
+    font-size: clamp(1.6rem, 6.7vw, 1.8rem);
+    letter-spacing: -0.1rem;
+}
+
+.menu-section-details p {
+    font-weight: 300;
+    font-size: clamp(0.9rem, 3.75vw, 1rem);
+    letter-spacing: -0.05rem;
+}
+
+.vertical-bar {
+    background-color: var(--red);
+    width: 0.15rem;
+}
+
+.menu-main {
+    display: grid;
+    grid-template-columns: repeat(1, min(80vw, 400px));
+    gap: 2rem;
+    grid-template-areas: 
+    "box-1"
+    "box-2"
+    "box-4"
+    "box-3";
+}
+
+
+/* ---------------------------------------------------- */
+/* CONTACT PAGE */
+/* ---------------------------------------------------- */
+
+.contact-page {
+    background-image: url(../images/contact-bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: max(100vh, auto);
+    font-family: carbona-variable, sans-serif;
+    color: var(--red);
+    text-transform: uppercase;
+}
+
+.contact-content {
+    background-color: var(--yellow);
+}
+
+form {
+    width: 100%;
+}
+
+form input, form textarea {
+    border: solid 2px var(--red);
+    background-color: var(--yellow);
+    color: var(--red);
+    text-transform: uppercase;
+    font-family: carbona-variable, sans-serif;
+    font-weight: 100;
+    font-size: 0.9rem;
+    opacity: 1;
+}
+
+.contact h2 {
+    font-weight: 600;
+    font-size: 1.9rem;
+    letter-spacing: -0.1rem;
+}
+
+.contact h3 {
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: -0.1rem;
+}
+
+.contact button {
+    background-color: var(--yellow);
+    color: var(--red);
+    font-family: carbona-variable, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: -0.05rem;
+    cursor: pointer;
+    border: solid 2px var(--red);
+    box-shadow: 0 6px 0 0 var(--red);
+}
+
+/* ---------------------------------------------------- */
+/* GALLERY PAGE */
+/* ---------------------------------------------------- */
+.gallery-page {
+    background-color: var(--yellow);
+}
+
+.gallery {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, min(250px, 40vw));
+    grid-template-rows: repeat(10, 1fr);
+    gap: 1.5rem;
+    grid-template-areas:
+    "box-1 box-2"
+    "box-1 box-2"
+    "box-1 box-4"
+    "box-3 box-4"
+    "box-3 box-4"
+    "box-3 box-4"
+    "box-5 box-5"
+    "box-5 box-5"
+    "box-5 box-5"
+    "box-5 box-5";
+}
+
+.gallery div {
+    border: solid 3px var(--red);
+    box-shadow: -10px 10px 0 0 var(--red);
+}
+
+.gallery div:last-child {
+    border: none;
+    box-shadow: none;
+    background-color: var(--red);  
+}
+
+
+/* ---------------------------------------------------- */
 /* HEADER | ALL PAGES (EXCEPT INDEX) */
 /* ---------------------------------------------------- */
 
 .nav {
     background-color: var(--green);
+}
+
+.nav section {
+    width: 100%;
 }
 
 .nav a {
@@ -331,11 +593,36 @@
     border-color: var(--yellow) !important;
 }
 
-.nav-links img {
+.nav-links img { /*mobile / middle*/
     fill: var(--yellow);
-    width: 25vw;
+}
+
+.nav > img { /*desktop / far right*/
+    width: min(150px, 10vw);
     height: auto;
 }
+
+.header-mobile-img {
+    background-image: url(../images/logo-4.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-desktop-img {
+    background-image: url(../images/header-logo-desktop.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 10vw;
+}
+
+.nav p {
+    font-family: carbona-variable, sans-serif;
+    font-size: 0.75rem;
+    color: var(--yellow);
+}
+
 
 
 
@@ -343,16 +630,16 @@
 /* FOOTER | ALL PAGES */
 /* ---------------------------------------------------- */
 
-.footer, footer {
+footer {
     background-color: var(--green);
     color: var(--yellow);
 }
 
-.footer h2 {
+.footer-main h2 {
     font-size: 1.3rem;
 }
 
-.footer p {
+.footer-main p {
     font-size: 0.75rem;
 }
 
@@ -364,7 +651,91 @@
     width: 60%;
 }
 
-.footer p, .footer h2 {
+.footer-main p, .footer-main h2 {
     font-family: carbona-variable, sans-serif;
     font-weight: 400;
+}
+
+.footer-logo {
+    width: min(175px, 20vw);
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .nav section {
+        width: 85%;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .about-nav-and-hero {
+        height: auto;
+    }
+
+    .menu-main {
+        grid-template-columns: repeat(2, min(40vw, 400px));
+        gap: 2rem;
+        grid-template-areas: 
+        "box-1 box-3"
+        "box-1 box-4"
+        "box-2 box-4";
+    }
+
+    .about-cta {
+        width: 80%;
+    }
+
+    .about-main-cta {
+        width: min(50vw, 500px);
+    }
+
+    .affogato-review, .affogato-hero button {
+        position: relative;
+        right: 200px;
+        bottom: 50px;
+    }
+
+    .gallery {
+    height: 110vh;
+    grid-template-columns: repeat(3, min(250px, 28vw));
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+    "box-1 box-2 box-2"
+    "box-1 box-2 box-2"
+    "box-1 box-2 box-2"
+    "box-3 box-6 box-4"
+    "box-3 box-6 box-4"
+    "box-3 box-5 box-5"
+    "box-3 box-5 box-5"
+    "box-3 box-5 box-5";
+}
+
+.gallery div:nth-child(3) img {
+    height: 100% !important;
+    width: auto !important;
+}
+
+.gallery div:first-child img {
+    height: 100% !important;
+    width: auto !important;
+}
+
+    
+}
+
+@media (min-width: 992px) {
+    
+    .contact {
+        width: 70vw;
+    }
+
+    form {
+        width: auto;
+    }
+
 }
