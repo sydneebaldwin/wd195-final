@@ -17,7 +17,7 @@
 /* ---------------------------------------------------- */
 
 /* NAVIGATION */
-.home-nav-and-hero, .home-nav-and-hero a {
+/*.home-nav-and-hero, .home-nav-and-hero a {
     color: var(--yellow);
     text-decoration: none;
     text-transform: uppercase;
@@ -35,7 +35,7 @@
 
 .home-nav-and-hero p {
     font-size: 3.5vw;
-}
+} */
 
 .home-nav {
     width: 85%;
@@ -44,7 +44,7 @@
 
 /* HERO */
 .home-nav-and-hero {
-    background-image: url(../images/home-hero.jpg);
+    background-image: url(../images/index-hero.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -53,6 +53,7 @@
 .home-hero {
     width: 120%;
     height: auto;
+    max-width: 580px;
 }
 
 /* WAVY EDGE SECTION */
@@ -85,12 +86,8 @@
     padding-bottom: 60px;
 }
 
-.home-about div:first-child {
-    width: 45%;
-}
-
 .home-about div:last-child {
-    width: 55%;
+    max-width: 175px;
 }
 
 .home-about img {
@@ -100,7 +97,7 @@
 
 .home-about h2 {
     font-family: carbona-variable, sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: -0.1rem;
     text-transform: uppercase;
     font-size: 1.8rem;
@@ -113,6 +110,30 @@
     font-weight: 300;
     letter-spacing: -0.05rem;
 }
+
+.home-about-main-img, .home-about-img-1, .home-about-img-2 {
+    width: 50%;
+    border: solid 3px var(--yellow);
+    box-shadow: -6px 6px 0 0 var(--yellow);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+}
+
+.home-about-main-img {
+    background-image: url(../images/index-about.jpeg);
+    max-width: 220px;
+}
+
+.home-about-img-1 {
+    background-image: url(../images/about-hero.jpeg);
+}
+
+.home-about-img-2 {
+    background-image: url(../images/gallery-1.jpeg);
+}
+
 
 /* REVIEWS */
 .home-reviews-and-footer {
@@ -135,8 +156,8 @@
 
 .home-review-card h2 {
     font-family: carbona-variable, sans-serif;
-    font-weight: 350;
-    font-size: 1.4rem;
+    font-weight: 400;
+    font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: -0.07rem;
     /* font-size: max(1rem, 3.5vw); */
@@ -164,6 +185,14 @@
 
 .home-review-card div:first-child {
     border-color: var(--red) !important;
+}
+
+.home-reviews {
+    max-width: 400px;
+}
+
+.home-review-card {
+    max-width: 300px;
 }
 
 
@@ -222,6 +251,7 @@
     cursor: pointer;
     border: solid 3px var(--yellow);
     box-shadow: 0 4px 0 0 var(--yellow);
+    transition: box-shadow 0.5s;
 }
 
 /* TEXT CONTENT */
@@ -328,6 +358,7 @@
     cursor: pointer;
     border: solid 3px var(--yellow);
     box-shadow: 0 8px 0 0 var(--yellow);
+    transition: box-shadow 0.5s;
 }
 
 .affogato-content-and-footer {
@@ -542,6 +573,7 @@ form input, form textarea {
     cursor: pointer;
     border: solid 2px var(--red);
     box-shadow: 0 6px 0 0 var(--red);
+    transition: box-shadow 0.5s;
 }
 
 /* ---------------------------------------------------- */
@@ -672,6 +704,10 @@ footer {
 }
 
 
+button:hover {
+    box-shadow: 0 0 0 0;
+}
+
 
 @media (min-width: 576px) {
     .affogato-main-img, .affogato-img-1, .affogato-img-2 {
@@ -684,6 +720,17 @@ footer {
     .affogato-content div:last-child {
         width: min(195px, 70%);
     }
+
+    .home-about-main-img {
+        max-width: none;
+    }
+
+    .home-about-main-img, .home-about-img-1, .home-about-img-2 {
+        width: 250px;
+    }
+
+
+
 }
 
 
@@ -695,6 +742,21 @@ footer {
 
     .nav {
         width: 100%;
+    }
+
+    .home-nav-and-hero .nav {
+        background-color: transparent;
+        background-image: url(../images/index-blur-2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .home-hero div {
+    background-image: url(../images/index-blur-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     }
 
     .about-nav-and-hero {
@@ -749,13 +811,16 @@ footer {
     width: auto !important;
 }
 
-/*.affogato-content {
-    position: absolute;
-    right: 0;
-    min-height: 420px;
-} */
-
 .affogato-content > div {
+    position: relative;
+    right: 75px;
+}
+
+.home-reviews {
+    max-width: none;
+}
+
+.home-about > div {
     position: relative;
     right: 75px;
 }

@@ -12,30 +12,37 @@
     <!------------------------------------------------------>
     <!-- NAVBAR + HERO SECTION + ABOUT SECTION WAVE BORDER-->
     <!------------------------------------------------------>
-    <section class="home-nav-and-hero d-flex flex-column justify-content-between align-items-center"> <!--Hero background goes at this layer-->
+    <section class="home-nav-and-hero d-flex flex-column justify-content-between align-items-center overflow-hidden"> <!--Hero background goes at this layer-->
         
         <!--NAVBAR-->
-        <section class="home-nav d-flex flex-column align-items-center justify-content-center">
-            <p class="m-0">4358 michigan st, new york city, ny, 48927</p>
-            <hr class="m-1">
-            <div class="home-nav-links d-flex flex-row justify-content-between w-100">
-                <div class="d-flex flex-column gap-1">
-                    <a href="index.html" class="text-decoration-underline link-offset-3">Home</a>
+        <div class="w-100 nav d-flex flex-row justify-content-center px-5 py-4 gap-4 px-lg-3" style="max-height: 190px;">
+        <section class="d-flex flex-column align-items-center justify-content-center w-100">
+            <p class="d-none d-md-block align-self-start m-0 text-uppercase">4358 michigan st, new york city, NY, 48927</p>
+            
+            <hr class="w-100 border border-2 opacity-100 container-md-flex mt-md-2">
+            
+            <div class="w-100 nav-links d-flex flex-row justify-content-between align-items-center gap-3 justify-content-md-center">
+                
+                <div class="d-flex flex-column gap-1 flex-md-row gap-md-3">
+                    <a class="text-decoration-underline link-offset-2" href="index.html">Home</a>
                     <a href="about.html">About</a>
                     <a href="menu.html">menu</a>
                 </div>
-                <div class="d-flex flex-column text-end gap-1">
+
+                <div class="d-flex flex-column text-end gap-1 flex-md-row gap-md-3">
                     <a href="affogato.html">affogato</a>
                     <a href="gallery.html">Gallery</a>
                     <a href="contact.html">contact</a>
                 </div>
             </div>
         </section>
+        </div>
 
         <!--HERO-->
         <section class="home-hero d-grid justify-content-center align-items-center">
-            <div class="row">
-               <img class="img-fluid col-12 pb-5" src="./images/index-hero-logo.png" alt="Main Logo">
+            <div class="row align-self-center justify-content-center">
+               <img class="img-fluid col-12 pb-5 d-md-none" src="./images/index-hero-logo.png" alt="Main Logo">
+               <img class="img-fluid col-12 pb-5 d-none d-md-block m-5" src="./images/index-desktop-logo.png" alt="Main Logo">
             </div>
         </section>
 
@@ -48,31 +55,44 @@
     <!------------------------------------------------------>
     <!-- ABOUT SECTION -->
     <!------------------------------------------------------>
-    <section class="home-about d-flex gap-3 align-items-center px-4">
+    <!--<section class="home-about d-flex gap-3 align-items-center px-4">
         
-        <!--IMAGE-->
+
         <div class="">
             <img class="img-fluid border border-2" src="./images/index-about.jpeg" alt="Iced Coffee">
         </div>
 
-        <!--TEXT-->
+
         <div class="">
             <h2 class="lh-1">coffee with <em>class</em></h2>
             <p class="m-0 lh-1">We&apos;re your next go-to coffee shop right in the heart of NYC. Inspired by Italian beverages and pastries, combined with our cozy atmosphere, we&apos;d love to be your workspace for the day, or your coffee with a friend.</p>
         </div>
-    </section>
+    </section> -->
 
+    <section class="home-about d-flex align-items-center gap-3 px-4 pb-5 pt-3 me-lg-5 justify-content-center justify-content-md-end w-100 justify-content-xl-center">
+            <div class="home-about-img-1 d-none d-md-block">
+            </div>
+            <div class="home-about-img-2 d-none d-md-block">
+            </div>
+            <div class="home-about-main-img">
+            </div>
+            <div class="d-flex flex-column gap-1 ms-md-4" style="max-width: 175px">
+                <h2 class="lh-1">coffee with <em>class</em></h2>
+                <p class="m-0 lh-1">We&apos;re your next go-to coffee shop right in the heart of NYC. Inspired by Italian beverages and pastries, combined with our cozy atmosphere, we&apos;d love to be your workspace for the day, or your coffee with a friend.</p>
+            </div>
+    </section>
 
     <!------------------------------------------------------>
     <!-- REVIEW SECTION + FOOTER -->
     <!------------------------------------------------------>
-    <section class="home-reviews-and-footer m-0 p-0">
+    <section class="home-reviews-and-footer m-0 p-0 d-flex flex-column align-items-center">
         
         <!--REVIEWS-->
         <section class="home-reviews p-5 d-flex flex-column gap-3">
             <h2 class="m-0">reviews</h2>
             <hr class="m-0">
-                <div class="home-review-card d-flex gap-3 justify-content-center align-items-center">
+            <div class="d-flex flex-column gap-3 flex-md-row">
+            <div class="home-review-card d-flex gap-3 justify-content-center align-items-center">
                     <div class="d-flex gap-1 flex-column px-2 py-3 border border-1 rounded-pill">
                         <img src="./images/star-icon.svg">
                         <img src="./images/star-icon.svg">
@@ -87,7 +107,7 @@
                     </div>
                 </div>
 
-                <div class="home-review-card d-flex gap-3 justify-content-center align-items-center">
+                <div class="home-review-card d-flex gap-3 justify-content-center align-items-center ">
                     <div class="d-flex gap-1 flex-column px-2 py-3 border border-1 rounded-pill">
                         <img src="./images/star-icon.svg">
                         <img src="./images/star-icon.svg">
