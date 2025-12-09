@@ -202,11 +202,11 @@
 
 /* HERO */
 .about-nav-and-hero, .about-nav-and-hero {
-    background-image: url(../images/about-hero.jpeg);
+    background-image: url(../images/about-hero-2.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: right bottom;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 90vh;
 }
 
 .corner-fix {
@@ -284,7 +284,7 @@
 .about-content p {
     font-family: carbona-variable, sans-serif;
     font-weight: 350;
-    font-size: 1rem;
+    font-size: clamp(1rem, 3.5vw, 1.2rem);
     letter-spacing: -0.05rem;
 }
 
@@ -533,6 +533,8 @@
 
 .contact-content {
     background-color: var(--yellow);
+    padding-bottom: 5rem;
+    padding-top: 2rem;
 }
 
 form {
@@ -548,6 +550,13 @@ form input, form textarea {
     font-weight: 100;
     font-size: 0.9rem;
     opacity: 1;
+    transition: border 0.25s;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-width: 3px;
+    font-weight: 400;
 }
 
 .contact h2 {
@@ -605,6 +614,7 @@ form input, form textarea {
 .gallery div {
     border: solid 3px var(--red);
     box-shadow: -10px 10px 0 0 var(--red);
+    border-radius: 10px;
 }
 
 .gallery div:last-child {
@@ -777,7 +787,7 @@ button:hover {
     }
 
     .about-main-cta {
-        width: min(50vw, 500px);
+        width: min(50vw, 600px);
     }
 
     .affogato-review, .affogato-hero button {
@@ -823,6 +833,11 @@ button:hover {
 .home-about > div {
     position: relative;
     right: 75px;
+}
+
+.about-nav-and-hero {
+    background-size: cover;
+    background-position: right top;
 }
 
     
