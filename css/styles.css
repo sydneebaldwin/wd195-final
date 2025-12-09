@@ -7,8 +7,6 @@
     --yellow: #F5F3C3;
     --red: #5C1116;
     --green: #455127;
-    --basic-text: normal 300 1rem carbona-variable, sans-serif;
-    --header-text: bold 700 3rem carbona-variable, sans-serif;
 }
 
 
@@ -17,25 +15,6 @@
 /* ---------------------------------------------------- */
 
 /* NAVIGATION */
-/*.home-nav-and-hero, .home-nav-and-hero a {
-    color: var(--yellow);
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.home-nav-and-hero hr {
-    border-top: 4px solid var(--yellow);
-    opacity: 1;
-    width: 100%;
-}
-
-.home-nav-and-hero a {
-    font-size: 4vw;
-}
-
-.home-nav-and-hero p {
-    font-size: 3.5vw;
-} */
 
 .home-nav {
     width: 85%;
@@ -105,7 +84,6 @@
 
 .home-about p {
     font-family: carbona-variable, sans-serif;
-    /* font-size: max(1rem, 3.5vw); */
     font-size: 1rem;
     font-weight: 300;
     letter-spacing: -0.05rem;
@@ -160,7 +138,6 @@
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: -0.07rem;
-    /* font-size: max(1rem, 3.5vw); */
 }
 
 .home-review-card h3 {
@@ -438,7 +415,6 @@
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    /* filter: brightness(0.9) hue-rotate(10deg) blur(2px); */
     font-family: carbona-variable, sans-serif;
     color: var(--red);
     text-transform: uppercase;
@@ -718,7 +694,6 @@ button:hover {
     box-shadow: 0 0 0 0;
 }
 
-
 @media (min-width: 576px) {
     .affogato-main-img, .affogato-img-1, .affogato-img-2 {
     width: 250px;
@@ -738,12 +713,7 @@ button:hover {
     .home-about-main-img, .home-about-img-1, .home-about-img-2 {
         width: 250px;
     }
-
-
-
 }
-
-
 
 @media (min-width: 768px) {
     .nav section {
@@ -839,7 +809,6 @@ button:hover {
     background-size: cover;
     background-position: right top;
 }
-
     
 }
 
@@ -859,5 +828,5 @@ button:hover {
 @media (min-width: 1200px) {
     .affogato-content > div {
     right: 0;
-}
+    }
 }
